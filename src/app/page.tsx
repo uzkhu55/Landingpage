@@ -10,11 +10,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import { LanguageProvider, useLanguage } from "@/components/language";
+import { StockTicker } from "@/components/stock";
 
 const content = {
   mn: {
@@ -306,7 +305,7 @@ function Home() {
             </Button>
           </Link>
         </motion.section>
-
+        <StockTicker />
         <motion.section
           key="contact"
           className="py-16"
